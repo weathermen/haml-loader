@@ -1,28 +1,30 @@
-# Haml-Coffee (Hamlc) Loader for Webpack
+# Haml Loader for Webpack
 
-Import haml-coffee files as modules in your webpack project. Returns a rendered template.
+Import haml files as modules in your webpack project. Returns a rendered template.
+
+This is a fork of [Haml-Coffee Loader for webpack](https://npm.im/haml-loader).
 
 ## Setup
 
 Add to your webpack config module.loaders:
 
 ````
-{ test: /\.html\.hamlc$/, loader: "haml" }
+{ test: /\.html\.haml$/, loader: "haml-haml" }
 ````
 
 ## Rendering templates
 
-### webpack/assets/javascripts/templates/my_template.html.hamlc
+### webpack/assets/javascripts/templates/my_template.html.haml
 
 ````javascript
 .template
-  %h1= @title
+  %h1 {{ title }}
 ````
 
 ### webpack/assets/javascripts/modules/my_module.js
 
 ````javascript
-require("templates/my_template.html.hamlc")
+require("templates/my_template.html.haml")
 ````
 
 will return the HTML:
@@ -34,7 +36,7 @@ will return the HTML:
 ````
 
 ````javascript
-require("!haml?title=test!templates/my_template.html.hamlc")
+require("!haml?title=test!templates/my_template.html.haml")
 ````
 
 will return the HTML:
@@ -47,8 +49,8 @@ will return the HTML:
 
 ## AngularJS
 
-`haml-loader` can be nicely chained with `ngtemplate-loader`
+`haml-haml-loader` can be nicely chained with `ngtemplate-loader`
 
 ````
-{ test: /\.html\.hamlc$/, loaders: ['ngtemplate?relativeTo=assets/javascripts', 'haml'] },
+{ test: /\.html\.haml$/, loaders: ['ngtemplate?relativeTo=assets/javascripts', 'haml-haml'] },
 ````
