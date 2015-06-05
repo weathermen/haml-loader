@@ -5,16 +5,16 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexanderPavlenko/haml-loader.git"
+    "url": "https://github.com/newrelic-forks/haml-loader.git"
   },
   "author": {
     "name": "Alexander Pavlenko"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexanderPavlenko/haml-loader/issues"
+    "url": "https://github.com/newrelic-forks/haml-loader/issues"
   },
-  "homepage": "https://github.com/AlexanderPavlenko/haml-loader",
+  "homepage": "https://www.npmjs.com/package/haml-haml-loader",
   "dependencies": {
     "haml": "^0.4.3",
     "loader-utils": "0.2.x"
