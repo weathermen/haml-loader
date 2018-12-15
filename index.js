@@ -2,10 +2,10 @@ module.exports = function (source) {
   var loaderUtils, haml, query, result
   this.cacheable && this.cacheable(true)
   loaderUtils = require("loader-utils")
-  haml = require("haml")
+  haml = require("hamljs")
   query = loaderUtils.parseQuery(this.query)
   try {
-    result = haml.render(source, query)
+    result = haml.compile(source, query)
   } catch (e) {
     this.emitError('HAML:' + e)
     throw e

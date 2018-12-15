@@ -1,22 +1,22 @@
 {
-  "name": "haml-haml-loader",
-  "version": "1.0.1",
-  "description": "haml-loader fork; webpack loader using 'haml' instead of 'haml-coffee'",
+  "name": "hamljs-loader",
+  "version": "0.1.0",
+  "description": "haml-loader fork using hamljs"
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/newrelic-forks/haml-loader.git"
+    "url": "https://github.com/weathermen/hamljs-loader.git"
   },
   "author": {
-    "name": "Alexander Pavlenko"
+    "name": "Tom Scott"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/newrelic-forks/haml-loader/issues"
+    "url": "https://github.com/weathermen/hamljs-loader/issues"
   },
-  "homepage": "https://www.npmjs.com/package/haml-haml-loader",
+  "homepage": "https://www.npmjs.com/package/hamljs-loader",
   "dependencies": {
-    "haml": "^0.4.3",
+    "hamljs": "^0.6.2",
     "loader-utils": "0.2.x"
   }
 }
