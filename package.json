@@ -1,7 +1,7 @@
 {
   "name": "hamljs-loader",
   "version": "0.1.0",
-  "description": "haml-loader fork using hamljs"
+  "description": "haml-loader fork using hamljs",
   "main": "index.js",
   "repository": {
     "type": "git",
